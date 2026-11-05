@@ -2,7 +2,7 @@
 
 import type { FormEvent } from "react";
 import { useState } from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { ClientAccessShell } from "../AccountShell";
 import styles from "../page.module.css";
 
@@ -48,7 +48,7 @@ export default function ForgotUsernamePage() {
         className={`${styles.recoveryCard} ${styles.usernameRecovery}`}
         aria-labelledby="recover-username"
       >
-        <form>
+        <form onSubmit={handleSubmit}>
           <fieldset className={styles.formFields} disabled={pending}>
             <h1 id="recover-username">Recover Username</h1>
             <h2>FOR IDENTIFICATION, PLEASE PROVIDE:</h2>
