@@ -1,0 +1,14 @@
+{
+  "name": "@training-simulator/bus",
+  "version": "1.0.0",
+  "private": true,
+  "exports": {
+    "./types": "./types.ts",
+    "./bus": "./bus.ts",
+    "./sse": "./sse.ts",
+    "./durable": "./durable.ts"
+  },
+  "dependencies": {
+    "ioredis": "^6.0.0"
+  }
+}
